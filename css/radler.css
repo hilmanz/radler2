@@ -1,0 +1,475 @@
+/*
+Theme Name:  RADLER
+Version: 1.0
+Author: Acit Jazz 2014
+*/
+@import url("icon.css");
+@import url("popup.css");
+@import url(http://fonts.googleapis.com/css?family=Play);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	outline: none !important;
+	font-family: 'Play', sans-serif;
+}
+img {
+	border:none 0;
+	outline:none;
+}
+input {outline:none !important;}
+iframe {border:0;}
+.clear {
+	clear:both;
+	height:0;
+	font-size:0;
+}
+ul {
+	padding:0;
+	margin:0;
+}
+li {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.fl {float:left;}
+.fr {float:right;}
+.opacity {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+h1,h2,h3,h4{
+	font-weight:400;
+}
+iframe {
+	width:100% !important;
+	margin:0 !important;
+	padding:0 !important;
+	border:0 !important;
+	max-width:100% !important;
+	overflow-y: hidden !important;
+}
+html { font-size: 100%;}
+::selection{
+	background: #475b06;
+	color: #FFF;
+}
+::-moz-selection { color: #fff;  background-color: #475b06;}
+a {
+	color: #475b06;
+	text-decoration:none !important;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+a:hover { color: #6e8e06;}
+a:focus { color: #475b06;}
+strong { font-weight: 600;}
+.center { text-align: center;}
+.justify {text-align: justify;}
+li { line-height: 20px;}
+p {
+	padding:0;
+	margin:0 0 20px 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+		  outline:none;
+}
+/** ========================= MAIN ========================= **/
+body {
+	background:url(../images/bg.jpg) no-repeat #000 center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/bg.jpg', sizingMethod='scale')";
+	font-family: 'Play', sans-serif;
+	color: #333;
+	font-weight:300;
+	font-size: 14px;
+	line-height:1.4;
+	margin: 0;
+	overflow-x:hidden !important;
+	padding:0 0 70px 0;
+}
+/** ========================= COLOM ========================= **/
+.col-content{width:70%;}
+.col-sidebar{width:30%;}
+.col1{ width:100%;}
+.col2{ width:50%;}
+.col3{ width:33.333333%}
+.col4{ width:25%;}
+.col5{ width:20%;}
+.col6{ width:16.6666667%}
+.col-content,.col-sidebar,.col1,.col2,.col3,.col4,.col5,.col6{
+	float:left;
+	padding:0 10px;
+}
+/** ========================= HEADER ========================= **/
+/** ========================= CONTENT ========================= **/
+#container{
+	clear:both;
+	padding:0 30px;
+}
+::-webkit-input-placeholder {
+   color:#666;
+   font-style:normal;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color:#666;
+   font-style:normal;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color:#666;
+   font-style:normal;
+}
+:-ms-input-placeholder {  
+   color:#666;
+   font-style:normal;
+}
+#thecontent{
+	clear:both;
+}
+/**=========================  PLUGIN =========================**/
+/**=========================  FORM =========================**/
+.row{
+	overflow:hidden; clear:both;
+	padding:10px 0;
+}
+.row-submit{
+	padding:30px 0 0 0;
+}
+.row-submit .button3{
+	margin:0 20px 0 0;
+}
+input[type=text],
+input[type=password],select{
+	padding:0 10px;
+	width:100%;
+	height:35px;
+	border:solid 1px #ccc;
+	max-width:600px;
+	background:#f3f3f3;
+	border-radius:3px;
+}
+input[type=text]:focus,
+input[type=password]:focus{
+	background:#fff;
+}
+input[type=text].colorpicker{
+	margin:0;
+	border-right:solid 100px #333;
+	line-height:20px;
+	max-width:300px;
+}
+label{
+	max-width:250px;
+	float:left;
+	display:block;
+	width:100%;
+	line-height:35px;
+}
+.fileinput{
+  color: transparent;
+  cursor:pointer;
+}
+.fileinput::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.fileinput::before {
+  content: 'Select some files';
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+  color:#000;
+}
+.fileinput:hover::before {
+  border-color: black;
+}
+.fileinput:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+/** ========================= TABLE ========================= **/
+table{
+	border-bottom:solid 1px #ddd;
+	width:100%;
+}
+table td,table th{
+	border-right:solid 1px #ddd;
+	border-top:solid 1px #ddd;
+	padding:10px;
+	background:#fff;
+	text-align:left;
+}
+table tr:nth-child(even) td{
+	background:#f4f4f4;
+}
+table td:first-child {
+	border-left:solid 1px #ddd;
+}
+table th:first-child {
+	border-left:solid 1px #000;
+}
+table th{
+	background:#282a36;
+	color:#fff;
+	border-color:#000;
+}
+/**=========================  SIDEBAR =========================**/
+/**=========================  BUTTON =========================**/
+.button{
+	background:#f5ee31;
+	display:inline-block;
+	border:solid 1px #ddd;
+	line-height:45px;
+	height:45px;
+	padding:0 40px;
+	vertical-align:top;
+	cursor:pointer;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	color:#5fbade;
+	font-size:30px;
+}
+.button:hover{
+	background:#8adb62;
+	border:solid 1px #475b06;
+	color:#475b06 !important;
+}
+.paging{
+	clear:both;
+	padding:20px 0;
+	text-align:center;
+}
+.paging a{
+	display:inline-block;
+	background:#2d2d2d;
+	border-radius:100px;
+	width:30px; height:30px;
+	line-height:30px;
+	margin:0 2px;
+	color:#fff;
+	vertical-align:top;
+	font-size:12px;
+	box-shadow:0 1px 0px #fff;
+}
+.paging a span:before{
+	display:inline-block;
+	width:100%;
+	text-align:center;
+}
+.paging a.current,.paging a:hover{
+	background:#8adb62;
+}
+/** ========================= POPUP ========================= **/
+.popup{
+	display:none;
+}
+.popupContent{
+	background:#000;
+	max-width:500px;
+	position:relative;
+	margin:0 auto;
+	padding:20px;
+}
+.mfp-close-btn-in .mfp-close{
+	opacity:1;
+	background:#8adb62;
+	color:#fff;
+	border-radius:100px; width:35px; height:35px; line-height:35px;
+	right:-15px; top:-15px;
+}
+.mfp-close-btn-in .mfp-close:hover{
+	background:#666;
+}
+/** Footer **/
+#footer{
+	background:url(../images/bg_footer.png) repeat-x;
+	width:100%;
+	position:fixed;
+	left:0;
+	bottom:0;
+	height:61px;
+}
+/** ========================= AGE GATEWAY ========================= **/
+.center-title{
+	text-align:center;
+	padding:80px 0 40px 0;
+	color:#fff;
+}
+.center-title h3{
+	font-size:20px;
+	margin:20px 0;
+}
+#gateway-form{
+	text-align:center;
+	color:#fff;
+	max-width:930px;
+	margin:0 auto;
+	position:relative;
+	z-index:10;
+}
+#gateway-form input[type=text]{
+	background:url(../images/tr2.png) repeat;
+	border:none;
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+	color:#fff;
+	font-size:50px;
+	width:150px; height:150px;
+}
+#gateway-form p{
+	margin:30px 0;
+	text-transform:uppercase;
+}
+#gateway-form a{
+	text-decoration:underline !important;
+	color:#fff;
+}
+.center-title img,#comingsoonPage .center-title img{
+	width:100%;
+	max-width:748px;
+}
+.ice-container,#comingsoonPage .ice-container{
+	position: fixed;
+	margin: 0 0 0 -311px;
+	max-width: 622px;
+	min-height: 500px;
+	width: 100%;
+	left: 50%;
+	bottom:30px;
+}
+.ice-container div{
+	position:absolute;
+	text-align:center;
+	width:100%;
+}
+.ice-container div img,#comingsoonPage .ice-container div img{
+	width:100%;
+}
+.ice4,#comingsoonPage .ice4{
+	bottom:-120px;
+	width:100%;
+}
+.ice4 img,#comingsoonPage .ice4 img{
+	max-width:622px;
+}
+.ice3,#comingsoonPage .ice3{
+	bottom:40px;
+	-webkit-animation:flag2 10s linear infinite;
+	-moz-animation:flag2 10s linear infinite;
+	-o-animation:flag2 10s linear infinite;
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+}
+.ice3 img,#comingsoonPage .ice3 img{
+	max-width:456px;
+}
+.ice2,#comingsoonPage .ice2{
+	bottom:150px;
+	-webkit-animation:flag 10s linear infinite;
+	-moz-animation:flag 10s linear infinite;
+	-o-animation:flag 10s linear infinite;
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+}
+.ice2 img,#comingsoonPage .ice2 img{
+	max-width:380px;
+}
+.ice1,#comingsoonPage .ice{
+	bottom: 122px;
+	left: 50px;
+	-webkit-animation:flag 7s linear infinite;
+	-moz-animation:flag 7s linear infinite;
+	-o-animation:flag 7s linear infinite;
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+}
+.ice1 img,#comingsoonPage .ice img{
+	max-width:362px;
+}
+.flare,#comingsoonPage .flare{
+	left:-200px;
+	top:-200px;
+	-webkit-animation:flaring 10s linear infinite;
+	-moz-animation:flaring 10s linear infinite;
+	-o-animation:flaring 10s linear infinite;
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-ms-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+}
+/** ========================= Coming soon ========================= **/
+#comingsoonPage .center-title{
+	padding:160px 0 0 0;
+}
+#comingsoonPage .center-title img{
+	max-width:770px;
+}
+#comingsoonPage .ice-container{
+	margin: 0 0 0 -365px;
+	max-width: 727px;
+	min-height: 500px;
+	bottom:120px;
+}
+#comingsoonPage .ice4{
+}
+#comingsoonPage .ice4 img{
+	max-width:727px;
+}
+#comingsoonPage .ice3{
+}
+#comingsoonPage .ice3 img{
+	max-width:500px;
+}
+#comingsoonPage .ice2{
+}
+#comingsoonPage .ice2 img{
+	max-width:500px;
+}
+#comingsoonPage .ice1{
+}
+#comingsoonPage .ice1 img{
+	max-width:397px;
+}
+#comingsoonPage .flare{
+	left:-400px;
+	top:-400px;
+}
